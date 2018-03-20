@@ -17,4 +17,6 @@ class MetaItem extends _\support\AMetaItem
 	const TYPE_NULL=   'null';
 	const TYPE_MAP=    'map';
 	const TYPE_ARRAY=  'array';
+
+	use MetaItem\__static;
 }
