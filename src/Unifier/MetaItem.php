@@ -19,4 +19,5 @@ class MetaItem extends _\support\AMetaItem
 	const TYPE_ARRAY=  'array';
 
 	use MetaItem\__static;
+	use MetaItem\__object;
 }
