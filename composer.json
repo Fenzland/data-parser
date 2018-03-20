@@ -1,0 +1,20 @@
+{
+    "name": "fenzland/data-parser",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fenz",
+            "email": "uukoo@163.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "fenzland/php-helpers": ">=1.4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fenzland\\DataParser\\": "src/"
+        }
+    }
+}
