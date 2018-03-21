@@ -14,6 +14,7 @@ class MetaItem extends _\support\AMetaItem
 	const TYPE_INT=    'int';
 	const TYPE_FLOAT=  'float';
 	const TYPE_STRING= 'string';
+	const TYPE_AUTO=   'auto';
 	const TYPE_NULL=   'null';
 	const TYPE_MAP=    'map';
 	const TYPE_ARRAY=  'array';
