@@ -22,7 +22,7 @@ trait __object
 	 */
 	public function getType():string
 	{
-		return $this->type;
+		return $this->type??static::TYPE_AUTO;
 	}
 
 	/**
@@ -129,6 +129,11 @@ trait __object
 			case 'map':
 				$this->type= static::TYPE_MAP;
 				$this->default= [];
+			break;
+
+			case 'auto':
+				$this->type= static::TYPE_AUTO;
+				$this->default= null;
 			break;
 
 			case 'null':
@@ -261,6 +266,9 @@ trait __object
 
 			case static::TYPE_ARRAY:
 				return array_values( (array)$origin );
+
+			case static::TYPE_AUTO:
+				return $origin;
 
 			case static::TYPE_NULL:
 			default:

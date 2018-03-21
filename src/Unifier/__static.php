@@ -76,6 +76,9 @@ trait __static
 					$value
 				);
 
+			case MetaItem::TYPE_AUTO:
+				return $meta_item->value ?? $value ?? $meta_item->default ?? null;
+
 			case MetaItem::TYPE_NULL:
 			default:
 				return null;

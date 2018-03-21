@@ -37,7 +37,7 @@ trait TStartWithMetaArray
 	 */
 	static public function parse_( array$meta_array, array$data ):array
 	{
-		return static::{static::PARSE_METHOD}( static::getMetaClass_()::make_( $meta_array ), $data );
+		return static::{static::PARSE_METHOD.'_'}( static::getMetaClass_()::make_( $meta_array ), $data );
 	}
 
 	/**
