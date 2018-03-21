@@ -1,0 +1,11 @@
+users [
+	{
+		id :int *
+		name :string *
+		score :float [0]
+		age :int [0]
+		is_alive :bool <true>
+ghosts [
+	{
+		name :string *
+			is_alive :bool <false>
